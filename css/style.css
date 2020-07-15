@@ -4,7 +4,7 @@
     padding: 0px;
 }
 body{
-    height: 100%;   
+    height: auto;   
 }
 
 div#content{
@@ -17,7 +17,7 @@ div#content{
     background-color: rgb(104, 96, 96);
     width: 50%;
     border-right: 2px solid black; 
-    height: fit-content;
+    height: auto;
 }
 
 #redes a{
