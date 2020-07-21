@@ -24,7 +24,6 @@ body{
 #page .content{
     margin: 50px auto 0;
     width: 80%;
-
     
 }
 
@@ -32,55 +31,50 @@ body{
     
 } */
 .personals-info h1{
+    font-size: 45px;
     color: white;
-    margin-bottom: 100px;
-    list-style-type: disc;
-}
-
-#photo{
-    width: 300px;
-    height: 300px;
-    border-top-left-radius:  200px;
-    border-bottom-left-radius:  200px;
-    
 }
 
 #imagens{
     display: flex;
-    align-items: center;
-    background-color: rgb(122, 117, 117);
-    width: fit-content;
-    border-top-left-radius:  200px;
-    border-bottom-left-radius:  200px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-left: 1px solid black;
+    flex-direction: column;
+    margin: 200px 0;
+    justify-content: flex-start;
 }
 
-#imagens:hover{
-    opacity: 80%;
-    
+#photo{
+   width: 400px;
+   border: 3px solid black;
+   border-radius: 12px;
 }
 
 #icons{
-    display: flex; 
-    flex-direction: column; 
-    
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 2px;
 }
 
 #icons a{
+    padding: 25px;
     display: flex;
-    background-color: rgb(208, 209, 211);
     align-items: center;
     justify-content: center;
-    padding: 12.5px 11.5px;
+    border-radius: 200px;
+    transition: 500ms;
+
 }
 
 #icons a:hover{
-    background-color: rgb(117, 111, 111);
+    background-color: rgb(54, 52, 52);
 }
 
 #icons img{
     width: 50px;
+    image-rendering: auto;
 }
 
+@media(max-width: 600px){
+    .personals-info h1{
+        font-size: 80px;
+    }
+}
