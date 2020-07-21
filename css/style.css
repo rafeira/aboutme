@@ -5,76 +5,28 @@
 }
 
 body{
-    background-color: rgb(128, 134, 134);
-    height: 100%;
-    
-
+    background-color: gray;
 }
-
-#page{
-    margin: 0 auto;
-    background-color: rgb(117, 111, 111);
-    height: 100vh;
-    width: 70%;
-    display: flex;
-    box-shadow: black;
-    box-shadow: -1px 3px 18px 14px rgba(0,0,0,0.75);
-}
-
-#page .content{
-    margin: 50px auto 0;
-    width: 80%;
-    
-}
-
-/* .personals-info{
-    
-} */
-.personals-info h1{
-    font-size: 45px;
-    color: white;
-}
-
-#imagens{
-    display: flex;
-    flex-direction: column;
-    margin-top: 200px;
-    justify-content: flex-start;
-}
-
-#photo{
-   width: 400px;
-   border: 3px solid black;
-   border-radius: 12px;
-}
-
 #icons{
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 2px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 #icons a{
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 200px;
-    transition: 500ms;
-
-}
-
-#icons a:hover{
-    background-color: rgb(54, 52, 52);
+    margin: 43px 0;
 }
 
 #icons img{
-    width: 50px;
-    image-rendering: auto;
+    width: 300px;
+    
 }
 
-@media(max-width: 600px){
-    .personals-info h1{
-        font-size: 80px;
+@media(max-width: 1000px){
+    #icons img{
+        width: 100px;
+        
     }
 }
